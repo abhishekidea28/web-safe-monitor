@@ -2,26 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-primary: #F4F4F4;
+  /* Primary background color */
+
+  --font-family: 'Inter', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-primary);
+  font-family: var(--font-family);
+  /* Apply Inter font globally */
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 311px calc(100% - 311px);
+}
+
+.layout-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1240px;
+
+
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .modal-container {
+    width: 100%;
+    max-width: 421px;
+    margin: 0 auto;
+    padding: 15px 15px;
+
+
+  }
+
+  .wrapper {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 311px calc(100% - 311px);
+  }
+
+  .layout-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1240px;
   }
 }
