@@ -4,14 +4,12 @@ import { cn } from "@/Utilities/cn";
 
 export default function Layout({ children, className }) {
   return (
-    <div className={cn('flex h-screen', className)}>
+    <div className={cn('flex h-screen', className="max-w-[1920px]")}>
       <Sidebar />
-      <div className="flex flex-col flex-grow ml-64">
-        <NavBar />
-        <main className="flex-grow p-8">
+       
+        <main className="flex flex-col flex-grow ml-64">
           {children}
         </main>
-      </div>
     </div>
   );
 }

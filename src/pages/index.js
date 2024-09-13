@@ -1,5 +1,5 @@
 import Button from '@/components/ui/Button';
-import Input from '@/components/ui/input';
+import Input from '@/components/ui/Input';
 import Password from '@/components/ui/Password';
 
 import Link from 'next/link';
@@ -9,6 +9,7 @@ import Link from 'next/link';
 export default function Home() {
     return (
         <div className='w-full h-screen bg-primary flex items-center justify-center'>
+        
             <div className='w-full max-w-[496px] bg-white  rounded-xl px-8 py-8'>
                 <div className='w-full flex items-center justify-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="88" height="89" viewBox="0 0 88 89" fill="none">
@@ -33,9 +34,9 @@ export default function Home() {
                         </label>
                     </>
 
-                    <div className='w-full flex flex-wrap items-center justify-between'>
+                    <div className='w-full flex flex-wrap items-end justify-between px-1'>
                         {/* {method? <Link className='text-primary3 text-sm font-medium py-4' href="#" onClick={()=> setMethod(false)}>Use phone instead</Link>: <Link className='text-primary3 text-sm font-medium py-4' href="#" onClick={()=> setMethod(true)}>Use email instead</Link>} */}
-                        <Link className='text-neutral2 text-sm font-medium py-4 ' href="/forgot-password">Forgot Password</Link>
+                        <Link className='ml-auto text-neutral2 text-sm font-medium py-4 ' href="/forgot-password">Forgot Password ?</Link>
                     </div>
 
                     <Button type="submit" variant="primary" className="mt-1 mb-5" >{"Login"}</Button>

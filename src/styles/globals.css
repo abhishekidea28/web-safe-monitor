@@ -2,21 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root {
   --background-primary: #F4F4F4;
   /* Primary background color */
 
-  --font-family: 'Inter', sans-serif;
 }
 
+@layer base {
 
+  html,
+  body,
+  main {
+      @apply font-inter;
+  }
+
+  
+  /* ... */
+}
 
 body {
   color: var(--foreground);
   background-color: var(--background-primary);
-  font-family: var(--font-family);
+  font-family: var(--font-inter);
   /* Apply Inter font globally */
 }
 

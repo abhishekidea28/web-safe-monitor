@@ -11,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["var(--font-inter)"],
+      },
       colors: {
         primary: '#014CC3',
         lightPrimary:'#E5EFFF',
