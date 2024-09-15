@@ -28,13 +28,7 @@ body {
   /* Apply Inter font globally */
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 311px calc(100% - 311px);
-}
+
 
 .layout-container {
   width: 100%;
@@ -63,7 +57,7 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 311px calc(100% - 311px);
+    grid-template-columns: 258px calc(100% - 258px);
   }
 
   .layout-container {

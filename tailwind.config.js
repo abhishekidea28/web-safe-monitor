@@ -16,6 +16,8 @@ module.exports = {
       },
       colors: {
         primary: '#014CC3',
+        secondary:'#4288F5',
+        primaryHover: 'rgba(1, 76, 195, 0.7)',
         lightPrimary:'#E5EFFF',
         background: '#F4F4F4',  // Background color
       },

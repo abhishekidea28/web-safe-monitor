@@ -2,7 +2,7 @@
 import { cn } from '@/Utilities/cn'
 import { cva } from 'class-variance-authority'
 import React, { useState } from 'react'
-import Input from './input';
+import Input from './Input';
 
 export default function Password({children,...attributes}) {
     const [show, setShow] = useState(false)

@@ -4,7 +4,7 @@ import React from 'react'
 
 const NavBar = ({ title }) => {
     return (
-        <header className="bg-white py-3 w-full flex items-center justify-between px-5 ">
+        <header className="bg-white py-3 w-full flex items-center justify-between px-5 pr-8">
             <h1 className=" font-bold text-xl capitalize">{title}</h1>
             <span className='flex gap-4 items-center'>
                 <BellIcon />

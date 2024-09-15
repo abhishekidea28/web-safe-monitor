@@ -7,8 +7,8 @@ export default function Sidebar() {
     const currentRoute = router.pathname; // Access the current route path
 
     return (
-        <div className="h-screen w-64 bg-white text-white fixed top-0 left-0 flex flex-col z-10">
-            <div className="p-6 text-2xl font-bold">
+        <div className=" w-full bg-white fixed bottom-0 left-0 h-16  md:h-dvh md:sticky md:top-0 md:left-0 md:bg-white md:flex md:flex-wrap md:flex-col ">
+            <div className="p-6 pb-12 text-2xl font-bold">
                 <Logo />
             </div>
             <nav className="flex-grow">
@@ -17,9 +17,9 @@ export default function Sidebar() {
                         <li
                             className={`px-6 py-3 mb-2 ${
                                 currentRoute.startsWith('/user-details')
-                                    ? 'bg-primary text-white rounded-r-full'
-                                    : 'text-[#5D5D5D]'
-                            } hover:bg-blue-700 hover:text-white hover:rounded-r-full`}
+                                    ? 'bg-primary text-white rounded-r-full hover:bg-primary'
+                                    : 'text-[#5D5D5D] hover:bg-primaryHover'
+                            }  hover:text-white hover:rounded-r-full`}
                         >
                             User Details
                         </li>
@@ -28,9 +28,9 @@ export default function Sidebar() {
                         <li
                             className={`px-6 py-3 ${
                                 currentRoute === '/'
-                                    ? 'bg-primary text-white rounded-r-full'
-                                    : 'text-[#5D5D5D]'
-                            } hover:bg-blue-700 hover:text-white hover:rounded-r-full`}
+                                    ? 'bg-primary text-white rounded-r-full hover:bg-primary'
+                                    : 'text-[#5D5D5D] hover:bg-primaryHover'
+                            }  hover:text-white hover:rounded-r-full`}
                         >
                             Logout
                         </li>
